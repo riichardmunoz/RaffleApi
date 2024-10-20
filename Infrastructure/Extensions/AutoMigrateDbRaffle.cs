@@ -66,8 +66,8 @@ namespace Raffle.Infrastructure.Extensions
             {
                 context.Set<ProductEntity>().AddRange(new List<ProductEntity>
                 {
-                    new() {Name = "Sorteo de un Carro Mazda 0 Km", Description = "Se sortea un hermoso Carro Mazda para este próximo 01 de Noviembre del 2024", ClientId = new("79cb32a8-6384-42f4-bdae-d0e66adcdf14") },
-                    new() {Name = "Juego de 20 Millones de pesos", Description = "Para este próximo 15 de Noviembre se sortean 20 Millones de pesos", ClientId = new("79cb32a8-6384-42f4-bdae-d0e66adcdf14") },
+                    new() {Id = new("5A59FD69-F466-4CBE-CAE8-08DCF0933522"), Name = "Sorteo de un Carro Mazda 0 Km", Description = "Se sortea un hermoso Carro Mazda para este próximo 01 de Noviembre del 2024", ClientId = new("79cb32a8-6384-42f4-bdae-d0e66adcdf14") },
+                    new() {Id = new("4E39AFFE-4618-47ED-CAE9-08DCF0933522"), Name = "Juego de 20 Millones de pesos", Description = "Para este próximo 15 de Noviembre se sortean 20 Millones de pesos", ClientId = new("79cb32a8-6384-42f4-bdae-d0e66adcdf14") },
                 });
 
                 context.SaveChanges();
@@ -77,8 +77,8 @@ namespace Raffle.Infrastructure.Extensions
             {
                 context.Set<UserEntity>().AddRange(new List<UserEntity>
                 {
-                    new() {FullName = "Juan Valderrama", Phone = "3184442255", Address = null },
-                    new() {FullName = "Pedro Picapiedra", Phone = "3115558844", Address = "Despues de la esquina" },
+                    new() {Id = new("891C3E78-879C-48FD-7E7F-08DCF0933530"), FullName = "Juan Valderrama", Phone = "3184442255", Address = null },
+                    new() {Id = new("CF6E004E-E567-433C-7E80-08DCF0933530"), FullName = "Pedro Picapiedra", Phone = "3115558844", Address = "Despues de la esquina" },
                 });
 
                 context.SaveChanges();

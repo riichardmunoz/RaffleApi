@@ -57,7 +57,8 @@ namespace Raffle.Api.Base.Extensions
                 options.AddPolicy("AllowAll",
                     p => p.AllowAnyHeader()
                     .AllowAnyMethod()
-                    //.WithOrigins(allowSpecificOrigins!.ToArray())
+                    .WithOrigins(allowSpecificOrigins!.ToArray())
+                    .AllowCredentials()
                     .WithExposedHeaders());
             });
 
